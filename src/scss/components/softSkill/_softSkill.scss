@@ -1,0 +1,214 @@
+.soft {
+
+  // .soft__block
+  &__block {
+    min-height: 100vh;
+    background-image: none;
+  }
+
+  &__group {
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 380px;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    &:hover .soft__card {
+      position: static;
+      transform: rotate(0deg);
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 30px;
+    }
+  }
+  &__card {
+    position: absolute;
+    padding: 15px;
+    width: 350px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: transform .3s ease-in-out, outline .3s ease-in-out;
+
+    @include small-tablet {
+      max-width: 300px;
+    }
+
+    @include mobile {
+      width: 100%;
+      position: static;
+    }
+
+    &:focus-visible {
+      z-index: 10;
+      transform: scale(1.1, 1.1);
+      outline: 2px solid #50FF6C;
+    }
+    &:hover {
+      transform: scale(1.1, 1.1);
+      outline: 2px solid #50FF6C;
+    }
+  }
+
+  &__card--one {
+    top: 30%;
+    left: 0%;
+    transform: rotate(-13deg);
+    z-index: 1;
+
+    @include tablet {
+      top: 10%;
+      left: 0%;
+    }
+
+    @include small-tablet {
+      position: static;
+      transform: rotate(0deg);
+
+    }
+  }
+
+  &__card--two {
+    top: 30%;
+    left: 10%;
+    transform: rotate(13deg);
+    z-index: 2;
+
+    @include tablet {
+      top: 30%;
+      left: 10%;
+    }
+
+    @include small-tablet {
+      transform: rotate(0deg);
+      top: 10%;
+      left: 7%;
+    }
+  }
+
+  &__card--three {
+    top: 20%;
+    left: 25%;
+    transform: rotate(5deg);
+    z-index: 3;
+
+    @include small-tablet {
+      transform: rotate(0deg);
+      top: 20%;
+      left: 14%;
+    }
+  }
+  &__card--four {
+    top: 28%;
+    left: 38%;
+    transform: rotate(-18deg);
+    z-index: 4;
+
+    @include tablet {
+      top: 30%;
+      left: 30%;
+    }
+
+    @include small-tablet {
+      transform: rotate(0deg);
+      top: 30%;
+      left: 21%;
+    }
+  }
+  &__card--five {
+    top: 23%;
+    left: 52%;
+    transform: rotate(13deg);
+    z-index: 5;
+
+    @include small-tablet {
+      transform: rotate(0deg);
+      top: 40%;
+      left: 28%;
+    }
+  }
+  &__card--six {
+    top: 28%;
+    left: 63%;
+    transform: rotate(-20deg);
+    z-index: 6;
+
+    @include tablet {
+      top: 50%;
+      left: 40%;
+    }
+
+    @include small-tablet {
+      transform: rotate(0deg);
+      top: 50%;
+      left: 35%;
+    }
+  }
+  &__card--seven {
+    top: 35%;
+    left: 70%;
+    transform: rotate(13deg);
+    z-index: 7;
+
+    @include tablet {
+      top: 30%;
+      left: 50%;
+      transform: rotate(0deg);
+    }
+
+    @include small-tablet {
+      transform: rotate(0deg);
+      top: 60%;
+      left: 42%;
+    }
+  }
+  // .soft__title
+  &__title {
+  }
+
+  // .soft__text
+
+  &__text {
+    // display: inline-block;
+    margin-bottom: 12px;
+    // width: 72%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 122%;
+    letter-spacing: 0.357px;
+    color: #F7F7F5;
+
+
+  }
+
+  &__text--caption {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__text--descr {
+    // padding-bottom: 50%;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  // .soft__group
+
+  &__group {
+  }
+
+
+}
+
+
+

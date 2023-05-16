@@ -1,0 +1,65 @@
+.nav {
+  padding: 20px 0;
+
+  @include tablet {
+    padding: 70px 0 20px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0 0;
+  }
+
+  // .nav__list
+
+  &__list {
+    margin: 0 auto;
+    max-width: 80%;
+    gap: 20px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  // .nav__item
+
+  &__item {
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+    // display: flex;
+
+  }
+
+  // .nav__link
+
+  &__link {
+    color: #50FF6C;
+  }
+
+  @include mobile {
+    .burger {
+      @include burger;
+      color: #50FF6C;
+
+    }
+  }
+
+  .menu--active {
+    // background-color: red;
+    height: 100vh;
+    width: 100%;
+  }
+  .menu--active.nav__list {
+    display: block;
+    padding: 50px;
+    font-size: 32px;
+  }
+
+}
+

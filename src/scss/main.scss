@@ -1,0 +1,24 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/nav";
+
+//about
+@import "./components/about/about";
+//carrer
+@import "./components/carrer/carrer";
+//hard
+@import "./components/hardSkill/hardSkill";
+//soft
+@import "./components/softSkill/softSkill";
+//portfolio
+@import "./components/portfolio/portfolio";
+
+//page-end
+@import "./components/end/end";

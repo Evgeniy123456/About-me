@@ -1,0 +1,154 @@
+.page {
+
+  &__block {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../img/pice.webp');
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @include tablet {
+      background-image: none;
+    }
+
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0.376px;
+    color: #F7F7F5;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    width: 65%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 122%;
+    letter-spacing: 0.357px;
+    color: #F7F7F5;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    padding: 18px 30px;
+    max-width: max-content;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 132%;
+    text-align: center;
+    letter-spacing: -0.32px;
+    color: #121212;
+    background: #50FF6C;
+    border-radius: 15px;
+    transition: transform .4s ease-in-out, opacity .3s ease-in-out;
+    opacity: .7;
+
+    &:focus-visible {
+      transform: scale(1.05, 1.05);
+      opacity: 1;
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+      opacity: 1;
+    }
+
+    &:active {
+      transform: scale(1, 1);
+      opacity: .7;
+    }
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__btn--prew svg {
+    transform: rotate(180deg);
+  }
+  &__group {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    background: #1F1F1F;
+    opacity: .4;
+    transition: transform .4s ease-in-out, opacity .3s ease-in-out;
+
+    &:focus-visible {
+      transform: scale(1.05, 1.05);
+      opacity: 1;
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+      opacity: 1;
+    }
+
+    &:active {
+      transform: scale(1, 1);
+      opacity: .7;
+    }
+  }
+
+  &__btn--prew {
+    padding: 20px 15px 20px 25px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  &__btn--next {
+    padding: 20px 25px 20px 15px;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+.mail-link {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 132%;
+  letter-spacing: -0.45px;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  color: #F7F7F5;
+  transition: transform .4s ease-in-out, opacity .3s ease-in-out;
+
+  &:focus-visible {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+
+  &:active {
+    transform: scale(1, 1);
+    opacity: .7;
+  }
+}
+
+.green-text {
+  color: #50FF6C;
+}
