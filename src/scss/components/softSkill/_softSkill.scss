@@ -38,7 +38,7 @@
     width: 350px;
     border-radius: 25px;
     background-color: #202020;
-    transition: transform .3s ease-in-out, outline .3s ease-in-out;
+    transition: transform .5s ease-in-out, outline .3s ease-in-out;
 
     @include small-tablet {
       max-width: 300px;
