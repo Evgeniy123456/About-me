@@ -32,6 +32,7 @@
     @include mobile {
       margin-bottom: 20px;
     }
+
     // display: flex;
 
   }
@@ -42,10 +43,26 @@
     color: #50FF6C;
     opacity: .8;
     transition: all .3s ease-in-out;
+
+    &:focus {
+      opacity: 1;
+      border-bottom: 2px solid #50FF6C;
+      outline: none;
+    }
+    &:hover {
+      opacity: 1;
+      border-bottom: 2px solid #50FF6C;
+    }
+    &:active {
+      opacity: 1;
+      color: #2f793b;
+      border-bottom: 2px solid #2f793b;
+    }
+
   }
 
   &__link.active {
-    color: #50FF6C;
+    // color: #50FF6C;
     opacity: 1;
     border-bottom: 2px solid #50FF6C;
   }
@@ -63,6 +80,7 @@
     height: 100vh;
     width: 100%;
   }
+
   .menu--active.nav__list {
     display: block;
     padding: 50px;
@@ -70,4 +88,3 @@
   }
 
 }
-
