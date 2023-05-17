@@ -40,6 +40,14 @@
 
   &__link {
     color: #50FF6C;
+    opacity: .8;
+    transition: all .3s ease-in-out;
+  }
+
+  &__link.active {
+    color: #50FF6C;
+    opacity: 1;
+    border-bottom: 2px solid #50FF6C;
   }
 
   @include mobile {
