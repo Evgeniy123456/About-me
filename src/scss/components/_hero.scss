@@ -6,11 +6,15 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    column-gap: 20px;
 
     @media (max-width: 1100px) {
-      max-width: 320px;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      column-gap: 0;
+    }
+
+    @include mobile {
+      justify-content: center;
     }
   }
 
@@ -23,6 +27,8 @@
 
     @media (max-width: 1100px) {
       margin-bottom: 20px;
+      min-width: 236px;
+      width: 40%;
     }
   }
 
@@ -42,7 +48,6 @@
 
   // .hero__link
   &__link {
-    // padding-bottom: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
