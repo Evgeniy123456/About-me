@@ -63,34 +63,50 @@
 
   // .header__btn
 
-  &__btn {
-    padding: 18px 60px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 132%;
-    background: #50FF6C;
-    border-radius: 15px;
-    color: #121212;
-    opacity: .8;
-    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+  // &__btn {
+  //   padding: 18px 60px;
+  //   font-weight: 600;
+  //   font-size: 16px;
+  //   line-height: 132%;
+  //   background: #50FF6C;
+  //   border-radius: 15px;
+  //   color: #121212;
+  //   opacity: .8;
+  //   transition: transform .3s ease-in-out, opacity .3s ease-in-out;
 
-    &:focus-visible {
-      transform: scale(1.1, 1.1);
-      opacity: 1;
-      outline: none;
-    }
+  //   &:focus-visible {
+  //     transform: scale(1.1, 1.1);
+  //     opacity: 1;
+  //     outline: none;
+  //   }
 
-    &:hover {
-      transform: scale(1.1, 1.1);
-      opacity: 1;
-      outline: none;
+  //   &:hover {
+  //     transform: scale(1.1, 1.1);
+  //     opacity: 1;
+  //     outline: none;
 
-    }
+  //   }
 
-    &:active {
-      transform: scale(1, 1);
-      opacity: .7;
-    }
-  }
+  //   &:active {
+  //     transform: scale(1, 1);
+  //     opacity: .7;
+  //   }
+  // }
 }
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+// body{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background: #050801;
+//     font-family: 'Raleway', sans-serif;
+//     font-weight: bold;
+// }
 
