@@ -7,6 +7,14 @@
   --container-offset: 120px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  //btn day-night
+  --hue: 223;
+	--primary: hsl(var(--hue),90%,50%);
+	--trans-dur: 0.3s;
+	--trans-timing: cubic-bezier(0.76,0.05,0.24,0.95);
+	--trans-timing-in: cubic-bezier(0.76,0.05,0.86,0.06);
+	--trans-timing-out: cubic-bezier(0.05,0.76,0.06,0.86);
+
   @media (max-width: 768px) {
     --container-offset: 20px;
   }

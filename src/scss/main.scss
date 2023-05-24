@@ -5,10 +5,11 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
-@import "./components/hero";
 @import "./components/nav";
+@import "./components/day-night";
+@import "./components/hero";
 @import './components/neon-btn';
+@import "./components/contacts";
 
 //about
 @import "./components/about/about";
