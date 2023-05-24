@@ -10,6 +10,7 @@ html {
 }
 
 .page {
+  position: relative;
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
@@ -41,10 +42,14 @@ p {
 blockquote {
   margin: 0;
 }
+
 .page__body {
   min-width: 320px;
-  background-color: #121212;
+	background-color: #121212;
+	transition:
+		background-color .3s ease-in-out,	color .3s ease-in-out;
 }
+
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }

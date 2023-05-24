@@ -1,10 +1,6 @@
 .nav {
   padding: 20px 0;
 
-  @include tablet {
-    padding: 70px 0 20px 0;
-  }
-
   @include mobile {
     padding: 40px 0 0;
   }
@@ -13,7 +9,6 @@
 
   &__list {
     margin: 0 auto;
-    max-width: 80%;
     gap: 10px;
 
     @include tablet {
@@ -33,9 +28,6 @@
     @include mobile {
       margin-bottom: 20px;
     }
-
-    // display: flex;
-
   }
 
   // .nav__link
@@ -92,7 +84,6 @@
   }
 
   .menu--active {
-    // background-color: red;
     height: 100vh;
     width: 100%;
   }

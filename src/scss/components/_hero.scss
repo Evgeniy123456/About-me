@@ -1,86 +1,60 @@
 .hero {
+  padding-bottom: 60px;
 
-  // .hero__list
-  &__list {
-    max-width: 872px;
-    margin: 0 auto;
+  @include mobile {
+    padding-bottom: 50px;
+    height: max-content;
+  }
+
+  &__block {
+    height: 100%;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 1100px) {
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      column-gap: 0;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 
     @include mobile {
-      justify-content: center;
+      height: max-content;
     }
   }
 
-  // .hero__item
-  &__item {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  &__avatar {
+    margin-bottom: 35px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
 
-    @media (max-width: 1100px) {
-      margin-bottom: 20px;
-      min-width: 236px;
-      width: 40%;
+  // .header__title
+
+  &__title {
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 110%;
+    letter-spacing: 0.376px;
+    color: #FFFFFF;
+
+    @include mobile {
+      text-align: center;
     }
   }
 
-  &__group {
-    margin-left: 12px;
-  }
+  // .header__descr
 
-  // .hero__text
-  &__text {
-    margin-bottom: 10px;
+  &__descr {
+    margin-bottom: 32px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
+    font-size: 23px;
+    line-height: 132%;
     letter-spacing: 0.357px;
-    color: #F0F8FD;
-  }
+    color: #F7F7F5;
+    mix-blend-mode: normal;
+    opacity: 0.5;
 
-  // .hero__link
-  &__link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0.357px;
-    color: #50FF6C;
-    opacity: .8;
-    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
-    outline: none;
-    transform: scale(2, 2);
-
-    &:focus-visible {
-      opacity: 1;
-      border-bottom: 1px solid #50FF6C;
-    }
-
-    &:hover {
-      opacity: 1;
-      border-bottom: 1px solid #50FF6C;
-    }
-
-    &:active {
-      opacity: 1;
-      color: #316f3c;
-      border-bottom: 1px solid #316f3c;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+    @include mobile {
+      text-align: center;
     }
   }
 }

@@ -9,3 +9,4 @@ menuLinks.forEach(link => {
     link.classList.add('active');
   }
 });
+

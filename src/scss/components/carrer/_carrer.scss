@@ -3,6 +3,7 @@
   &__block {
     background-image: none;
   }
+
   // .carrer__group
 
   &__group {
@@ -16,32 +17,32 @@
   }
 
   // .carrer__subtitle
-
   &__subtitle {
     margin-bottom: 20px;
     color: #F7F7F5;
   }
 
   // .carrer__date
-
   &__date {
     width: 33%;
     display: flex;
     justify-content: space-between;
     gap: 30px;
   }
+
   &__date--two {
     width: 90%;
   }
+
   &__date--three {
     width: 28%;
   }
+
   &__date--four {
     width: 100%;
   }
 
   // .carrer__number
-
   &__number {
     margin-bottom: 4px;
     color: #F7F7F5;
@@ -54,7 +55,6 @@
   }
 
   // .carrer__line
-
   &__line {
     width: 100%;
     min-width: 130px;
@@ -73,6 +73,7 @@
       border-radius: 5px;
     }
   }
+
   &__line--two {
     &::before {
       content: '';
@@ -83,6 +84,7 @@
       border-radius: 5px;
     }
   }
+
   &__line--three {
     &::before {
       content: '';
@@ -93,6 +95,7 @@
       border-radius: 5px;
     }
   }
+
   &__line--four {
     &::before {
       content: '';
@@ -104,4 +107,3 @@
     }
   }
 }
-
