@@ -12,17 +12,17 @@
     min-height: 570px;
     transition: all .5s ease-in-out;
 
-    &:hover {
+    // &:hover {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-    }
+    // }
 
-    &:hover .soft__card {
-      position: static;
-      transform: rotate(0deg);
-    }
+    // &:hover .soft__card {
+    //   position: static;
+    //   transform: rotate(0deg);
+    // }
 
     @include mobile {
       display: flex;
@@ -34,13 +34,13 @@
   }
 
   &__card {
-    position: absolute;
+    // position: absolute;
     padding: 15px;
     width: 350px;
     border-radius: 25px;
     background-color: #202020;
     transition: transform .5s ease-in-out, outline .3s ease-in-out;
-
+    // transform: rotate(0deg);
     @include small-tablet {
       max-width: 300px;
     }
@@ -52,131 +52,131 @@
 
     &:focus-visible {
       z-index: 10;
-      transform: scale(1.1, 1.1);
+      // transform: scale(1.1, 1.1);
       outline: 2px solid #50FF6C;
     }
 
     &:hover {
-      transform: scale(1.1, 1.1);
+      // transform: scale(1.1, 1.1);
       outline: 2px solid #50FF6C;
     }
   }
 
-  &__card--one {
-    top: 30%;
-    left: 0%;
-    transform: rotate(-13deg);
-    z-index: 1;
+  // &__card--one {
+  //   top: 30%;
+  //   left: 0%;
+  //   transform: rotate(-13deg);
+  //   z-index: 1;
 
-    @include tablet {
-      top: 10%;
-      left: 0%;
-    }
+  //   @include tablet {
+  //     top: 10%;
+  //     left: 0%;
+  //   }
 
-    @include small-tablet {
-      position: static;
-      transform: rotate(0deg);
-    }
-  }
+  //   @include small-tablet {
+  //     position: static;
+  //     transform: rotate(0deg);
+  //   }
+  // }
 
-  &__card--two {
-    top: 30%;
-    left: 10%;
-    transform: rotate(13deg);
-    z-index: 2;
+  // &__card--two {
+  //   top: 30%;
+  //   left: 10%;
+  //   transform: rotate(13deg);
+  //   z-index: 2;
 
-    @include tablet {
-      top: 30%;
-      left: 10%;
-    }
+  //   @include tablet {
+  //     top: 30%;
+  //     left: 10%;
+  //   }
 
-    @include small-tablet {
-      transform: rotate(0deg);
-      top: 10%;
-      left: 7%;
-    }
-  }
+  //   @include small-tablet {
+  //     transform: rotate(0deg);
+  //     top: 10%;
+  //     left: 7%;
+  //   }
+  // }
 
-  &__card--three {
-    top: 20%;
-    left: 25%;
-    transform: rotate(5deg);
-    z-index: 3;
+  // &__card--three {
+  //   top: 20%;
+  //   left: 25%;
+  //   transform: rotate(5deg);
+  //   z-index: 3;
 
-    @include small-tablet {
-      transform: rotate(0deg);
-      top: 20%;
-      left: 14%;
-    }
-  }
+  //   @include small-tablet {
+  //     transform: rotate(0deg);
+  //     top: 20%;
+  //     left: 14%;
+  //   }
+  // }
 
-  &__card--four {
-    top: 28%;
-    left: 38%;
-    transform: rotate(-18deg);
-    z-index: 4;
+  // &__card--four {
+  //   top: 28%;
+  //   left: 38%;
+  //   transform: rotate(-18deg);
+  //   z-index: 4;
 
-    @include tablet {
-      top: 30%;
-      left: 30%;
-    }
+  //   @include tablet {
+  //     top: 30%;
+  //     left: 30%;
+  //   }
 
-    @include small-tablet {
-      transform: rotate(0deg);
-      top: 30%;
-      left: 21%;
-    }
-  }
+  //   @include small-tablet {
+  //     transform: rotate(0deg);
+  //     top: 30%;
+  //     left: 21%;
+  //   }
+  // }
 
-  &__card--five {
-    top: 23%;
-    left: 52%;
-    transform: rotate(13deg);
-    z-index: 5;
+  // &__card--five {
+  //   top: 23%;
+  //   left: 52%;
+  //   transform: rotate(13deg);
+  //   z-index: 5;
 
-    @include small-tablet {
-      transform: rotate(0deg);
-      top: 40%;
-      left: 28%;
-    }
-  }
+  //   @include small-tablet {
+  //     transform: rotate(0deg);
+  //     top: 40%;
+  //     left: 28%;
+  //   }
+  // }
 
-  &__card--six {
-    top: 28%;
-    left: 63%;
-    transform: rotate(-20deg);
-    z-index: 6;
+  // &__card--six {
+  //   top: 28%;
+  //   left: 63%;
+  //   transform: rotate(-20deg);
+  //   z-index: 6;
 
-    @include tablet {
-      top: 50%;
-      left: 40%;
-    }
+  //   @include tablet {
+  //     top: 50%;
+  //     left: 40%;
+  //   }
 
-    @include small-tablet {
-      transform: rotate(0deg);
-      top: 50%;
-      left: 35%;
-    }
-  }
+  //   @include small-tablet {
+  //     transform: rotate(0deg);
+  //     top: 50%;
+  //     left: 35%;
+  //   }
+  // }
 
-  &__card--seven {
-    top: 35%;
-    left: 70%;
-    transform: rotate(13deg);
-    z-index: 7;
+  // &__card--seven {
+  //   top: 35%;
+  //   left: 70%;
+  //   transform: rotate(13deg);
+  //   z-index: 7;
 
-    @include tablet {
-      top: 30%;
-      left: 50%;
-      transform: rotate(0deg);
-    }
+  //   @include tablet {
+  //     top: 30%;
+  //     left: 50%;
+  //     transform: rotate(0deg);
+  //   }
 
-    @include small-tablet {
-      transform: rotate(0deg);
-      top: 60%;
-      left: 42%;
-    }
-  }
+  //   @include small-tablet {
+  //     transform: rotate(0deg);
+  //     top: 60%;
+  //     left: 42%;
+  //   }
+  // }
 
   // .soft__text
   &__text {
