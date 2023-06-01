@@ -2,9 +2,10 @@
 
   &__block {
     padding-top: 20px;
-    background-image: url('../img/pice.webp');
+    background-image: url('../img/foto1.png');
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 30%;
 
     @include tablet {
       background-image: none;

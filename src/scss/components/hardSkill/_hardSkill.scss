@@ -1,19 +1,19 @@
 .hard {
 
   &__block {
-    // min-height: 100vh;
-    background-image: url('../img/hardskill.webp');
-    background-repeat: no-repeat;
-    background-position: right top 15%;
-    background-size: 400px 400px;
+  //   // min-height: 100vh;
+    background-image: none;
+  //   background-repeat: no-repeat;
+  //   background-position: right top 15%;
+  //   background-size: 400px 400px;
 
-    @media (max-width: 1355px) {
-      background-position: right center;
-    }
+  //   @media (max-width: 1355px) {
+  //     background-position: right center;
+  //   }
 
-    @include tablet {
-      background-image: none;
-    }
+  //   @include tablet {
+  //     background-image: none;
+  //   }
   }
 
   &__group {
