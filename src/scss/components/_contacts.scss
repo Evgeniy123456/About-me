@@ -48,7 +48,7 @@
 
   // .hero__link
   &__link {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0.357px;
@@ -82,5 +82,9 @@
       left: 0;
       right: 0;
     }
+  }
+
+  .svg-day {
+    display: none;
   }
 }
